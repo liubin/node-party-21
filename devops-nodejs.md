@@ -42,14 +42,18 @@
 - 一个职位？
 - 一个部门？
 - 一套工具？
+- 基础设施自动化？
+- 敏捷？
 - 你理解的 DevOps ？
 
 ---
 
+<!-- page_number: false -->
 
 # 无数人眼中有无数个定义
 
 ---
+<!-- page_number: true -->
 
 
 > DevOps is about ==**minimizing the challenges of shipping, rapidly iterating**==, and securing software applications.
@@ -107,7 +111,161 @@
 
 ---
 
+
+![50% center](images/crazy-it.png)
+- 第一代运维？
+- 自动化
+- 云计算
+
+---
+
+# Ops ?
+
+- system engineers
+- system administrators
+- operations staff
+- release engineers
+- DBAs
+- network engineers
+- security professionals
+- IT
+
+---
+
+# DevOps 产生背景
+
+- 快速变化的市场、需求和竞争
+  - 快速
+  - 频繁
+- 应用程序架构的演进
+  - IaaS/PaaS
+  - 单体到微服务
+  - Lambda
+  - Cloud Native Application
+- 敏捷开发
+- 云计算
+
+---
+
+# 矛盾5要素
+
+- 速度
+- 质量
+- 成本
+- 安全
+- 体验
+
+---
 <!-- page_number: false -->
+
+# Dev vs Ops vs Else
+
+##### ![](images/your-machine-your-code.png)
+
+##### 同一个梦想，不一样的手段
+
+---
+<!-- page_number: true -->
+
+# 鸿沟
+
+- 理论/方法学
+- Mission
+- 考核指标
+- 工具
+- 流程
+- 自动 vs 手动
+- 合作 vs 甩锅
+- Function-driven vs Interrupt-driven
+
+![bg](images/code-thrown.png)
+
+---
+
+<!-- page_number: false -->
+
+![center 250%](images/worked-fine-for-me.jpg)
+
+---
+
+<!-- page_number: true -->
+
+# DevOps 的出现
+
+- [Agile Infrastructure & Operations](http://www.jedi.be/presentations/agile-infrastructure-agile-2008.pdf) , agile 2008, Patrick Debois
+- [10+ Deploys per Day: Dev and Ops Cooperation at Flickr](https://www.slideshare.net/jallspaw/10-deploys-per-day-dev-and-ops-cooperation-at-flickr) , Velocity 2009, Flickr
+- DevOpsDays, 2009
+- #devops
+
+---
+
+# 工具
+
+- 自动化基础设施
+- 共享版本控制
+- 一步构建和部署
+- feature flags
+- 共享的 Metrics
+- IRC 和 IM 机器人
+
+---
+
+# 文化
+
+- 尊重
+- 信任
+- 正视失败
+- 避免责备
+
+---
+
+<!-- page_number: true -->
+
+# 推进 DevOps 的目的
+
+- Dev 和 Ops 的合作 47%
+- 并行跨平台部署 41%
+- 进入新市场或者满足客户需求的TTM 41%
+- 提高用户体验 39%
+- 在云中开发、部署应用 31%
+- 混合云的复杂化 28%
+- 降低IT成本 16%
+
+<small>*- What Smart Businesses Know About DevOps*</small>
+
+---
+
+# DevOps 收益（实际效果）
+
+- 提高部署频率 53%
+- 加强部门间的协作 48%
+- 降低开发和运维的成本 46%
+- 提高部署的应用的质量 42%
+- 提高用户数 35%
+- 降低TTM 35%
+- 降低投入人员数量 38%
+- 实现跨平台 45%
+- 增加收入 28%
+
+---
+
+# DevOps 所需技能
+
+- 对商业优先级、战略和度量的知识 47%
+- 了解当前商业流程 42%
+- 沟通技巧 36%
+- 流程重构技巧 33%
+- 项目管理技巧 30%
+- 个人技能 30%
+- 编程能力 24%
+- 质量保证和测试技能 19%
+
+---
+<!-- page_number: false -->
+
+# 2. DevOps 中的管理哲学
+
+---
 
 #### 从敏捷开发说起
 
@@ -188,136 +346,11 @@
 
 ---
 
-![50% center](images/crazy-it.png)
-- 第一代运维？
-- 自动化
-- 云计算
-
----
-
-# DevOps 产生背景
-
-- 快速变化的市场、需求和竞争
-  - 快速
-  - 频繁
-- 应用程序架构的演进
-  - IaaS/PaaS
-  - 单体到微服务
-  - Lambda
-  - Cloud Native Application
-- 敏捷开发
-- 云计算
-
----
-
-# 矛盾5要素
-
-- 速度
-- 质量
-- 成本
-- 安全
-- 体验
-
----
-<!-- page_number: false -->
-
-# Dev vs Ops vs Else
-
-##### ![](images/your-machine-your-code.png)
-
-##### 同一个梦想，不一样的手段
-
----
-<!-- page_number: true -->
-
-# 鸿沟
-
-- 理论/方法学
-- Mission
-- 不同的绩效考核(速度 vs 稳定)
-- 不同的工具
-- 不同的流程
-- 自动 vs 手动
-- 合作 vs 甩锅
-
-![bg](images/code-thrown.png)
-
----
-
-
-<!-- page_number: false -->
-
-![center 250%](images/worked-fine-for-me.jpg)
-
----
-
-<!-- page_number: true -->
-
-# DevOps 的出现
-
-- PaaS
-- Agile Infrastructure & Operations, 2008, Patrick Debois
-- 10+ Deploys per Day: Dev and Ops Cooperation at Flickr, 2009, Flickr
-- DevOpsDays, 2009
-- #devops
-
----
 <!-- page_number: false -->
 
 # 我们的定义
 
-## ==Agile SDLC==
-
----
-
-![120% center](images/devops-everywhere.jpg)
-###### What Smart Businesses Know About DevOps, 2013 CA, TechInsights Report.
-
----
-
-<!-- page_number: true -->
-
-# 推进 DevOps 的目的
-
-- Dev 和 Ops 的合作 47%
-- 并行跨平台部署 41%
-- 进入新市场或者满足客户需求的TTM 41%
-- 提高用户体验 39%
-- 在云中开发、部署应用 31%
-- 混合云的复杂化 28%
-- 降低IT成本 16%
-
----
-
-# DevOps 收益（实际效果）
-
-- 提高部署频率 53%
-- 加强部门间的协作 48%
-- 降低开发和运维的成本 46%
-- 提高部署的应用的质量 42%
-- 提高用户数 35%
-- 降低TTM 35%
-- 降低投入人员数量 38%
-- 实现跨平台 45%
-- 增加收入 28%
-
----
-
-# DevOps 所需技能
-
-- 对商业优先级、战略和度量的知识 47%
-- 了解当前商业流程 42%
-- 沟通技巧 36%
-- 流程重构技巧 33%
-- 项目管理技巧 30%
-- 个人技能 30%
-- 编程能力 24%
-- 质量保证和测试技能 19%
-
----
-<!-- page_number: false -->
-
-# 2. DevOps 中的管理哲学
+## DevOps = ==Agile(SDLC)==
 
 ---
 <!-- page_number: true -->
@@ -359,16 +392,6 @@
 - Act
 - F-86 vs MiG-15（视野、响应时间）
 - ==OO-OO-OO==
-
----
-
-<!-- *template: gaia -->
-
-# OODA
-
-![](images/OODA.Boyd.svg)
-
-<small><small><small>*https://en.wikipedia.org/wiki/OODA_loop*</small></small></small>
 
 ---
 
@@ -417,14 +440,6 @@
 
 ---
 
-# Agile and Lean
-
-##### ![80%](images/agile-and-lean.jpg)
-
-##### <small>*http://kawaguti.hateblo.jp/entry/20130217/1361047033*</small>
-
----
-
 <!-- page_number: false -->
 
 # 3. DevOps 之道
@@ -455,19 +470,25 @@
 <small><small><small>*from: TechInsights Report: What Smart Businesses Know About DevOps*</small></small></small>
 
 ---
+<!-- page_number: false -->
+
+# Operation as a Feature
+
+---
+<!-- page_number: true -->
 
 # The Three Ways
 
-- Gene Kim
-- System Thinking （系统思考、强调全局优化）
-- Amplify Feedback Loops （放大的反馈回路）
-- Culture of Continual Experimentation And Learning（持续实验和学习的文化）。
+- Gene Kim - 《凤凰项目》作者
+- System Thinking （系统思考、强调全局优化，缩短 Lead Time ）
+- Amplify Feedback Loops （放大、及时的反馈回路）
+- Culture of Continual Experimentation And Learning（持续实验、学习和改善）。
 
 ---
 
 # CALMS
 
-- Jez Humble
+- Jez Humble -《持续交付》作者
 - Culture - People / Process
 - Automation
 - Lean
@@ -540,7 +561,7 @@
 
 # Continuous Delivery
 
-- provisioning & configuration
+- Also Provisioning & Configuration
 - TDD
 - Code Review
 - CI
@@ -740,16 +761,14 @@
 ![](images/atlassian-toolchain.jpg)
 
 ---
+<!-- page_number: false -->
 
-# Hashicorp
+# ![70% center](images/hashicorp-toolchain.png)
 
-![](https://cdn.edureka.co/blog/wp-content/uploads/2016/08/2.png)
-
----
-
-![70% center](images/hashicorp-toolchain.png)
+###### Hashicorp
 
 ---
+<!-- page_number: true -->
 
 # Terraform
 
@@ -782,13 +801,13 @@ resource "github_repository" "example-repo" {
 
 ---
 
-# Don't just do DevOps, be DevOps.
-
-![bg](images/forget-zhangwuji.jpeg)
+### ![200% center](images/sold-them-tools.png)
 
 ---
 
-### ![200% center](images/sold-them-tools.png)
+# Don't just do DevOps, be DevOps.
+
+![bg](images/forget-zhangwuji.jpeg)
 
 ---
 
