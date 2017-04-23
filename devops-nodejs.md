@@ -1,10 +1,10 @@
 <!-- $theme: gaia -->
-<!-- template: invert -->
+<!-- $size: 16:9 -->
 
 # DevOps 是什么不是什么
 
 ##### -- 给研发人员的另类管理入门课
-##### Bin Liu
+##### Bin Liu@alauda
 ##### 2017.4.23  node-party #21
 ##### http://github.com/liubin/node-party-21
 
@@ -51,12 +51,13 @@
 <!-- page_number: false -->
 
 # 无数人眼中有无数个定义
+# 你认为的 DevOps ？
 
 ---
 <!-- page_number: true -->
 
 
-> DevOps is about ==**minimizing the challenges of shipping, rapidly iterating**==, and securing software applications.
+> # DevOps is about ==**minimizing the challenges of shipping, rapidly iterating**==, and securing software applications.
 >
 > <small>-- *HashiCorp*</small>
 
@@ -64,36 +65,36 @@
 ---
 
 
-> DevOps is an enterprise capability for ==**continuous (software) service delivery**== that enables clients to ==**seize market opportunities**== and ==**reduce time to customer feedback**==.
+> # DevOps is an enterprise capability for ==**continuous (software) service delivery**== that enables clients to ==**seize market opportunities**== and ==**reduce time to customer feedback**==.
 >
 > <small>-- *IBM*</small>
 
 
 ---
 
-> DevOps is a ==**methodology**== that ==**combines what used to be the separate and sequential processes of development and operations into a continuous process**== of understanding a ==**market need**==, refining an application or service to meet that need, and testing and deploying the solution.
+> ### DevOps is a ==**methodology**== that ==**combines what used to be the separate and sequential processes of development and operations into a continuous process**== of understanding a ==**market need**==, refining an application or service to meet that need, and testing and deploying the solution.
 >
 > <small>-- *CA*</small>
 
 ---
 
-> DevOps is an approach to bridge the gap between agile software development and operations. 
+> # DevOps is an approach to bridge the gap between agile software development and operations. 
 >
 > <small>-- *agileweboperations.com*</small>
 
 ---
 
-> DevOps is a term used to refer to a ==**set of practices**== that emphasize the ==**collaboration and communication**== of both software developers and information technology (IT) professionals while ==**automating the process of software delivery and infrastructure changes**==. It aims at establishing a ==**culture and environment**== where ==**building, testing, and releasing software can happen rapidly, frequently, and more reliably**==.
+> #### DevOps is a term used to refer to a ==**set of practices**== that emphasize the ==**collaboration and communication**== of both software developers and information technology (IT) professionals while ==**automating the process of software delivery and infrastructure changes**==. It aims at establishing a ==**culture and environment**== where ==**building, testing, and releasing software can happen rapidly, frequently, and more reliably**==.
 >
 > <small>-- *Wikipedia*</small>
 
 ---
 
-> Devops is not a methodology or framework, but is a set of principles to ==**break down silos**==
+> # Devops is not a methodology or framework, but is a set of principles to ==**break down silos**==
 
 ---
 
-> DevOps 是 ==**IT 价值流中应用精益理论**== 的结果
+> # DevOps 是 ==**IT 价值流中应用精益理论**== 的结果
 >
 > <small>--*《凤凰项目》*</small>
 
@@ -121,13 +122,13 @@
 
 # Ops ?
 
-- system engineers
-- system administrators
-- operations staff
-- release engineers
+- System engineers
+- System administrators
+- Operations staff
+- Release engineers
 - DBAs
-- network engineers
-- security professionals
+- Network engineers
+- Security professionals
 - IT
 
 ---
@@ -138,12 +139,10 @@
   - 快速
   - 频繁
 - 应用程序架构的演进
-  - IaaS/PaaS
+  - Cloud（ IaaS/PaaS/Lambda ）
   - 单体到微服务
-  - Lambda
   - Cloud Native Application
 - 敏捷开发
-- 云计算
 
 ---
 
@@ -172,8 +171,7 @@
 - 理论/方法学
 - Mission
 - 考核指标
-- 工具
-- 流程
+- 工具/流程
 - 自动 vs 手动
 - 合作 vs 甩锅
 - Function-driven vs Interrupt-driven
@@ -204,7 +202,7 @@
 - 自动化基础设施
 - 共享版本控制
 - 一步构建和部署
-- feature flags
+- Feature flags
 - 共享的 Metrics
 - IRC 和 IM 机器人
 
@@ -271,11 +269,11 @@
 
 ---
 
-# SDLC 
+# SDLC
 
 ### Software Development Life Cycle
 
-### ![](https://cdn.edureka.co/blog/wp-content/uploads/2016/08/2.png)
+### ![](images/sdlc.png)
 
 ---
 
@@ -357,18 +355,22 @@
 
 # 阿姆达尔法则
 
-- Designing a high performance organization is similar to designing a high performance application
-- The theoretical throughput of a system is limited by serial latency
-- Output is limited by serial coordination
-- Empowering individuals to work independently improves throughput
+- 设计一个高性能的组织就像设计一个高性能的应用
+- 理论上生产能力（ throughput ）由串行延迟决定
+- 输出受限于串行协调（ serial coordination ）
+- 鼓励个体独立工作可以提高生产能力
 
 ---
 
 # 康威定律
 
-> A system’s design is a copy of the organization’s communication structure.
-> 
+> ## A system’s design is a copy of the organization’s communication structure.
 > -- <small>Melvin Conway, 1967</small>
+
+###### ==先解决沟通的问题==
+- 扁平化
+- 自治（ 小而美 ）
+- 2 个披萨
 
 ---
 
@@ -376,7 +378,7 @@
 
 ![50% center](images/two-pdca.png)
 
-- Plan（5W1H：What/Who/Why/When/Where/How）
+- Plan（What/Who/Why/When/Where/How）
 - Do
 - Check
 - Act（改善）
@@ -411,8 +413,8 @@
 # Lean 7 条原则
 
 - ==消除浪费==
-- 质量內建
-- 创造知识
+- ==质量內建==
+- ==创造知识==
 - 推迟决定
 - 迅速提供
 - 尊重个人
@@ -497,9 +499,9 @@
 
 ---
 
-> ==**values and behaviours**== that contribute to the unique social and psychological environment of an organisation.
-> 
-> Culture is basically a ==**reflection of how and why people go about their jobs**==
+> ## ==**values and behaviours**== that contribute to the unique social and psychological environment of an organisation.
+
+> ## Culture is basically a ==**reflection of how and why people go about their jobs**==
 
 ---
 
@@ -518,7 +520,7 @@
 
 ![70% center](images/you-can-t-manage-it.jpg)
 
-> The use of real-time metrics to drive rapid, precise, and granular software iterations.
+> #### The use of real-time metrics to drive rapid, precise, and granular software iterations.
 
 ---
 
@@ -537,7 +539,7 @@
 # Continuous Integration
 
 
-> Continuous Integration is a software development practice where members of a team ==integrate their work frequently==, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is ==verified by an automated build== (including test) to detect integration errors ==as quickly as possible==
+> #### Continuous Integration is a software development practice where members of a team ==integrate their work frequently==, usually each person integrates at least daily - leading to multiple integrations per day. Each integration is ==verified by an automated build== (including test) to detect integration errors ==as quickly as possible==
 > 
 >  – Martin Fowler
 
@@ -545,17 +547,9 @@
 
 # Continuous Delivery
 
-> Continuous delivery is a software engineering approach in which teams ==produce software in short cycles==, ensuring that the software can be ==reliably released at any time==. It aims at building, testing, and releasing software ==faster and more frequently==. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production.
+> #### Continuous delivery is a software engineering approach in which teams ==produce software in short cycles==, ensuring that the software can be ==reliably released at any time==. It aims at building, testing, and releasing software ==faster and more frequently==. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production.
 > 
 > <small>from Wikipedia “Continuous delivery”</small>
-
----
-
-# Continuous Delivery
-
-![](images/Continuous-Delivery-and-Automation.png)
-
-<small>*Why, What, and How of Continuous Delivery*</small>
 
 ---
 
@@ -567,6 +561,7 @@
 - CI
 - 打包、部署
 - 集成测试（功能、性能）自动化
+- 持续改进
     
 ---
 
@@ -581,13 +576,13 @@
 - Continuous Deployment
 - Continuous Learning
 - # ==Continuous Kaizen==
-- ==Continuous== Everything
+- ==Continuous Everything==
 
 ---
 
 # Pipeline
 
-![](images/Continuous-Delivery-In-Context.png)
+![](images/Continuous-Delivery-and-Automation.png)
 
 <small>*Why, What, and How of Continuous Delivery*</small>
 
@@ -619,10 +614,25 @@
 
 # SRE
 
-> Fundamentally, it's what happens when you ask a software engineer to design an operations function
+> ## Fundamentally, it's what happens when you ask a software engineer to design an operations function
 
-- IT 运营
-- 提高系统的可用性
+- 运营时间大于开发（产品团队）时间
+- 贯穿整个软件生命周期（从需求开始）
+- 用户体验、安全
+- 自动化、主动出击（ 50% 开发时间）
+
+---
+
+# SRE
+
+- LCE: Launch Coordination Engineering
+- PRR（Production Readiness Review）
+  - 架构、依赖
+  - 性能、预测
+  - 高可用、备份恢复、监控、安全
+- Error Budget
+- Postmortem
+- ICS（Incident Command System ，危机管理）
 
 ---
 
@@ -698,20 +708,12 @@
 
 - Bootstrapping
   - AWS/Azure/Vmware/Vagrant/OpenStack
-  - Docker
+  - Container
 - Configuration
   - Puppet/Chef/Ansible
   - AWS OpsWorks
 - Orchestration
   - Mesos/K8s/Swarm
-  - Nomad
-
----
-
-# Container
-
-- Docker/rkt
-- Orchestration
 
 ---
 
@@ -758,7 +760,7 @@
 
 # Atlassian
 
-![](images/atlassian-toolchain.jpg)
+![90% center](images/atlassian-toolchain.jpg)
 
 ---
 <!-- page_number: false -->
@@ -788,34 +790,6 @@ resource "github_repository" "example-repo" {
 ---
 
 # ![](images/pipeline-stage-view.png)
-
----
-
-# Conclusions
-
-- 不是一个部门或者一个职位
-- 也不是自动化或者 Docker、Ansible
-- 是一套方法论、最佳实践、组织管理学
-- Not a switch, DevOps is a journey
-- DevOpsSec？安全和审计
-
----
-
-### ![200% center](images/sold-them-tools.png)
-
----
-
-# Don't just do DevOps, be DevOps.
-
-![bg](images/forget-zhangwuji.jpeg)
-
----
-
-# Thank you for listening
-
-#### We are hiring
-# alauda.cn
-#### ![40%](images/alauda.jpg)
 
 ---
 
@@ -874,3 +848,33 @@ resource "github_repository" "example-repo" {
 ##### Puppet Labs、Docker Inc
 ##### Terraform/Consul/Docker/Monitoring/Puppet/Nagios/Logstash/Linux
 
+---
+
+<!-- page_number: false -->
+
+# Conclusions
+
+- 不是一个部门或者一个职位
+- 也不是自动化或者 Docker、Ansible
+- 是一套方法论、最佳实践、组织管理学
+- 消除浪费和隔阂
+- 没有终点的长征
+- DevOpsSec？安全和审计
+
+---
+
+### ![200% center](images/sold-them-tools.png)
+
+---
+
+# Don't just do DevOps, be DevOps.
+
+![bg](images/forget-zhangwuji.jpeg)
+
+---
+
+#### Thank you for listening
+
+## We are hiring
+# alauda.cn
+#### ![40%](images/alauda.jpg)
